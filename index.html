@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Scheduler</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Task Scheduler</h1>
+
+      <form id="task-form">
+        <input
+          type="text"
+          id="task-name"
+          placeholder="Task Name"
+          name="task-name"
+          required
+        />
+        <input type="datetime-local" id="task-date" name="task-date" required />
+        <button type="submit">Add Task</button>
+      </form>
+    </header>
+    <div class="a">
+      <button id="show-today" class="days">Today</button>
+      <button id="show-week" class="days">This Week</button>
+      <button id="show-month" class="days">This Month</button>
+      <button id="show-all" class="days">All Tasks</button>
+    </div>
+    <main id="list-container"></main>
+  </body>
+</html>

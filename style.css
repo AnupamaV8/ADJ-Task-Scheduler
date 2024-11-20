@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #558be2;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+header h1 {
+  padding: 20px 0;
+  margin: 0;
+}
+
+#menu {
+  margin-top: 20px;
+}
+
+#task-form {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#user-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#user-input:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+#list-container {
+  padding: 20px;
+  margin: 0px auto;
+  max-width: 1200px;
+}
+
+.task-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.description,
+.timestamp {
+  flex: 1;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: #000;
+  font-size: 18px;
+  /* background-color: rgb(26, 122, 104); */
+}
+
+/* Add border when input is not readonly and focused */
+.description:not([readonly]) {
+  border: 2px solid rgb(237, 198, 198);
+}
+
+.edit-button,
+.delete-button {
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-size: 14px;
+}
+
+/* Hover effect */
+.edit-button:hover,
+.delete-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05); /* Scale up the button on hover */
+}
+
+/* Edit button specific styles */
+.edit-button {
+  margin-right: 5px;
+  background-color: #4caf50;
+}
+
+/* Delete button specific styles */
+.delete-button {
+  margin-left: 5px;
+  background-color: rgb(240, 174, 174);
+}
+.days {
+  background-color: #4caf50;
+  color: aliceblue;
+  align-items: center;
+  font-size: 16px;
+}
+.a {
+  display: flex;
+  justify-content: center;
+}
